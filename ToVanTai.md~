@@ -4758,6 +4758,8 @@
 	subsystem  	"Component View"
 	quidu      	"3E400AA502EB"
 	logical_models 	(list unit_reference_list
+	    (object Class "NewClass"
+		quid       	"5CC666C60372")
 	    (object Class_Category "sun"
 		is_unit    	TRUE
 		is_loaded  	FALSE
@@ -5002,7 +5004,46 @@
 			fill_color 	13434879
 			quidu      	"3E400BDC0245"
 			width      	300
-			height     	180)))))
+			height     	180)))
+	    (object UseCaseDiagram "NewDiagram"
+		quid       	"5CC666C103B6"
+		title      	"NewDiagram"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object ClassView "Class" "Logical View::NewClass" @247
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(192, 288)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@247
+			    location   	(78, 236)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	228
+			    justify    	0
+			    label      	"NewClass")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5CC666C60372"
+			width      	246
+			height     	128
+			annotation 	8
+			autoResize 	TRUE)))))
     root_subsystem 	(object SubSystem "Component View"
 	quid       	"3E400AA502EB"
 	physical_models 	(list unit_reference_list
